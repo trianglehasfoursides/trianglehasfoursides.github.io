@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter Tight";
+      }
+    </style>
+  </head>
+  <body class="m-4 justify-center items-center mb-18">
+    <nav class="flex inset-x-0 top-0 justify-center items-center gap-12 mt-8">
+      <p
+        onclick="window.location.href='index.html'"
+        class="font-medium text-gray-400 underline"
+      >
+        Home
+      </p>
+      <a
+        class="font-medium text-gray-400 underline"
+        href="https://forms.gle/CuaYkAAUyh7dzDPM9"
+        >Contact</a
+      >
+      <a class="font-medium text-gray-400 underline" href="/about.html"
+        >About</a
+      >
+    </nav>
+    <div class="text-center mt-20 ml-2 mr-2">
+      <p class="mb-2 font-medium text-gray-500 text-sm">April 9, 2025</p>
+      <h1 class="text-2xl font-medium">
+        Go error handling <br />
+        Why Letting You Suffer Makes You a Better Developers
+      </h1>
+    </div>
+    <hr class="border-gray-300 mt-14 ml-3 mr-3 border-dashed mb-8" />
+    <div class="ml-3 mr-3 text-gray-600">
+      <p>
+        As programmers, we all have our guilty pleasures. Maybe it's pretending
+        we'll finally learn Rust this weekend, or writing overly clever
+        one-liners that we can't debug two days later. But deep down, we all
+        share one universal truth: we hate dealing with errors. Not the cute
+        <span class="font-bold text-black">"missing semicolon"</span> kind - but
+        the
+        <span class="font-bold text-black">
+          ";why is the production database on fire?"</span
+        >
+        kind.
+      </p>
+      <p class="mt-6">
+        Enter Go, the language that treats errors like a stern but fair teacher.
+        While other languages let you hide mistakes in try-catch blocks like
+        dirty laundry under the bed, Go makes you face them head-on. That <br />
+        <span class="font-bold text-black">if err != nil</span> you'll write
+        fifty times today? That's not boilerplate - that's character building.
+      </p>
+      <img class="mt-10 rounded-lg" src="carbon1.png" alt="" />
+      <p class="mt-10">
+        The genius is in the brutality. Errors in Go aren't special - they're
+        just values. No magic exceptions, no hidden control flow. When something
+        goes wrong, you know exactly where and why. It's the programming
+        equivalent of your mom making you apologize to the neighbor after your
+        <span class="font-bold text-black">"experiment"</span> with their WiFi
+        password.
+      </p>
+      <img class="mt-10 rounded-lg" src="carbon2.png" alt="" />
+      <p class="mt-10">
+        So welcome to the pain. The compile times are fast, the binaries are
+        small, and the error handling will make you a better programmer -
+        whether you like it or not. Now if you'll excuse me, I need to go write
+        <span class="font-bold text-black">if err != nil</span> for the
+        hundredth time today.
+      </p>
+      <hr class="border-gray-300 mt-14 border-dashed mb-14" />
+      <p>
+        So whether you're here for insights or just to laugh at my misfortunes,
+        welcome. The only guarantee? At least we're not writing Java.
+        (Disclaimer: 73% of statistics here are made up on the spot. All
+        opinions subject to change after coffee.)
+      </p>
+    </div>
+    <div class="flex mt-16 inset-x-0 bottom-0 justify-center items-center">
+      <h1
+        onclick="copyLink(window.location.href)"
+        class="font-medium underline"
+      >
+        Share This Article
+      </h1>
+    </div>
+    <script>
+      function copyLink(url) {
+        navigator.clipboard
+          .writeText(url)
+          .then(() => alert("Link copied! 📋"))
+          .catch((err) => console.error("Gagal copy:", err));
+      }
+    </script>
+  </body>
+</html>
